@@ -41,30 +41,6 @@ export default function Home() {
   const [textTo, setTextTo] = useState<string>('');
   const [debouncedTextTo] = useDebounce(textTo, 500);
 
-  const [image, setImage] = useState<string | ArrayBuffer | null>(null);
-  const [imageTo, setImageTo] = useState<string>('');
-
-  const [json, setJSON] = useState<string>('');
-  const [jsonTo, setJSONTo] = useState<string>('');
-
-  const provider = useEthersProvider();
-
-
-  // const [nftAddress, setNFTAddress] = useState<string>('');
-  // const [tokenID, setTokenID] = useState<string>('');
-  // const [nftTo, setNftTo] = useState<string>('');
-
-  const onImageChange = (event: any) => {
-    if (event?.target?.files && event?.target?.files[0]) {
-      const i = event.target.files[0];
-      var reader = new FileReader();
-      reader.onloadend = function() {
-        setImage(reader.result);
-      }
-      reader.readAsDataURL(i);
-    }
-  }
-
   const onEthscribeText = async () => {
     console.log(debouncedTextTo);
     if (debouncedText == '' || debouncedTextTo == '') {
