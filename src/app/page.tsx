@@ -94,7 +94,6 @@ export default function Home() {
     }
   }
 
-
   return (
     <>
       <WagmiConfig config={wagmiConfig}>
@@ -167,7 +166,7 @@ export default function Home() {
                 <br/><br/>
                 <button onClick={(e) => {
                   e.preventDefault();
-                  onEthscribeText();
+                  onEthscribeRaw();
                 }}>Ethscribe</button>
               </p>
             </>
