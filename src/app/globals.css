@@ -1,3 +1,5 @@
+@import url('../../node_modules/react-toastify/dist/ReactToastify.min.css');
+
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -38,6 +40,10 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+
+h1 {
+  padding-bottom: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,7 +102,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #0b42cf;
   text-decoration: none;
 }
 
