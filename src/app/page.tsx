@@ -106,7 +106,7 @@ export default function Home() {
               Get Started With ETHScriptions. Below you can Ethscribe raw hex data and text.<br/>
               See more information about ETHScriptions and ETHScript images <a className={styles.link} href="https://ethscriptions.com" target='_blank'>here</a>.<br/>
               This will not charge you anything! It simply formats and sends text data to Ethereum easily for you!<br/>
-              Made by <a className={styles.link} href="https://twitter.com/maxbridgland" target='_blank'>@maxbridgland</a>
+              Made by <a className={styles.link} href="https://twitter.com/maxbridgland" target='_blank'>@maxbridgland</a><br/>
               Source code <a className={styles.link} href="https://github.com/M4cs/ETHScriptionHelper" target='_blank'>here</a>.
             </p>
             <br/><br/>
