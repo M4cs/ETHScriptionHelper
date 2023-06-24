@@ -48,12 +48,12 @@ export default function Home() {
       return;
     }
     if (ethers.isAddress(debouncedTextTo)) {
-      console.log(`0x${ethers.hexlify(ethers.toUtf8Bytes(`data:${debouncedTextType},${debouncedText}`)).slice(2)}`)
+      console.log(`0x${ethers.hexlify(ethers.toUtf8Bytes(`data:${debouncedTextType};${debouncedText}`)).slice(2)}`)
       toast.promise(
         sendTransaction({
           value: BigInt(0),
           to: debouncedTextTo,
-          data: `0x${ethers.hexlify(ethers.toUtf8Bytes(`data:${debouncedTextType},${debouncedText}`)).slice(2)}`
+          data: `0x${ethers.hexlify(ethers.toUtf8Bytes(`data:${debouncedTextType};${debouncedText}`)).slice(2)}`
         }),
         {
           success: 'ETHScription Success!',
