@@ -53,7 +53,7 @@ export default function Home() {
         sendTransaction({
           value: BigInt(0),
           to: debouncedTextTo,
-          data: `0x${ethers.hexlify(ethers.toUtf8Bytes(`data:${debouncedTextType};${debouncedText}`)).slice(2)}`
+          data: `0x${ethers.hexlify(ethers.toUtf8Bytes(`data:${debouncedTextType}${textType == '' ? ',' : ';'}${debouncedText}`)).slice(2)}`
         }),
         {
           success: 'ETHScription Success!',
